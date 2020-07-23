@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0px;
+	padding:0px; 
+	background: url("../images/bkg.jpg");
+	background-size: cover;
+}
+.header{
+	width:420px;
+	height:400px;
+	background-color:#265aa6; 
+	padding: 30px 40px;
+	top:40%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	position:absolute;
+	opacity: 8.5;
+	border-radius:10px;
+	box-sizing: border-box;	
+}
+.logou{
+	width:110px;
+	height:110px;
+	top:-50px;
+	left:-40px;
+	border-radius:50px;
+	position: absolute;
+}
+
+h1{
+    text-align: center;
+	color: white;
+	font-family: century gothic;
+	margin:0px; 
+}
+
+.txtb{
+    border-bottom: 2px solid #adadad;
+    position: relative;
+    margin: 30px 0;
+}
+
+.txtb input{
+    font-size: 15px;
+    color: #333;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 40px;
+}
+
+.txtb span::before{
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: .5s;
+}
+
+.txtb span::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    transition: .5s;
+}
+
+.focus + span::before{
+    top: -5px;
+}
+
+.focus + span::after{
+    width: 100%;
+}
+
+.loginbtn{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.loginbtn:hover{
+    background-position: right;
+}
+
+.header input{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+
+.header select{
+	height: 25px;
+	border: none;
+	outline: none;
+	background-color: #006FF4;
+	color:white;
+	border-radius:20px;
+}
+
+.header input[type="Submit"]{
+	height: 40px;
+	background-color: #006FF4;
+	outline: none;
+	border: none;
+	color:white;
+	font-size: 25px;
+	font-weight: bold;
+	border-radius:20px;
+}
+
+.header a{
+	color:white;
+	cursor: pointer;
+}
+
+.header input[type="Submit"]:hover{
+	background-color:aqua;
+	color: aquamarine;
+}
+
+.footer{
+	background-color:#000000; 
+	padding: 10px 100px;
+	padding: 10px 100px;
+	opacity: .8;
+}

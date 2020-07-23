@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <title>E-Commerce Product</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="top-nav-bar">
+    <div class="search-box">
+        <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+        <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+
+    <a href="./index.html"><img src="images/logo.png" class="logo"></a>
+    <input type="text" class="form-control">
+    <span class="input-group-text"><i class="fa fa-search"></i></span>
+    </div>
+        <div class="menu-bar">
+        <ul>
+            <li><a href="./mycart.html"><i class="fa fa-shopping-basket"></i>My Cart</a></li>
+            <li><a href="./signup.html">Sign up</a></li>
+            <li><a href="./login.html">Log in</a></li>
+        </ul>
+        </div>
+    </div>
+    
+    <section class="sproduct">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-5">
+            <img src="images/product1.jpg" class="d-block"> 
+        </div>
+        <div class="col-md-7">
+            <h2>Wildcraft Mask</h2>
+            <p>Product code: IRS2020 </p>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+        
+        <p class="price">INR Rs. 150 </p>
+        <p><b>Availability: </b> In Stock</p>
+        <p><b>Condition: </b> New</p>
+        <p><b>Brand: </b> Wildcraft</p>
+        <label>Quantity: </label> 
+        <input type="text" value="1">
+        <button type="button" class="btn btn-primary">Add to Cart</button>
+        </div></div></div>
+    </section>
+    
+    
+    <section class="pdesc">
+    <div class="container">
+        <h6>Product description</h6>
+        <p>Mask is reusable up to 30 gentle hand washes. It is tested as per standards set by BIS (Bureau of Indian Standards), 95%+ Particle filtration efficiency (PFE) for over 0.3µm (micron) size particles & Bacteria</p>
+        <p>Fluid splash resistant test on Hydrostatic head test for up to 160 mmHg – Protects against accidental fluid / sneeze droplets from reaching user’s nose and mouth<br>Contents: 3 pieces of Wildcraft W95 Mask; Size: Large for Adults: 70+ Kgs</p>
+        <hr>
+    </div>
+    </section>
+    
+    
+    <section class="new-ar">
+        <div class="container">
+            <div class="title-box">
+            <h2>Similar</h2>
+            </div>
+        </div>
+    </section>
+    
+    <section class="featured">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="images/product4.jpg">
+                    <h3>N95 Maks</h3>
+                    <h5>Starting @ Rs. 150</h5>
+                </div> 
+                <div class="col-md-3">
+                    <img src="images/product5.jpg">
+                    <h3>Unisex cotton Maks</h3>
+                    <h5>Starting @ Rs. 250</h5>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="foot tex-center">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>Useful Links</h1>
+                    <p>Privacy policy</p>
+                    <p>Discount coupons</p>
+                    <p>Return policy</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Get to know Us</h1>
+                    <a href="https://kohli.company/KOHLI/company"><p>About Us</p></a>
+                    <a href="https://kohli.company/KOHLI/"><p>Contact Us</p></a>
+                    <a href="#"><p>Affiliate </p></a>
+                </div>
+                <div class="col-md-3">
+                    <h1>Connect via</h1>
+                    <a href="https://www.facebook.com/KohliCompany"><p>Facebook</p></a>
+                    <a href="https://www.instagram.com/KohliCompany"><p>Intagram</p></a>
+                    <a href="https://www.twitter.com/KohliCompany"><p>Twitter</p></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script>
+    function openmenu()
+        {
+            document.getElementById("side-menu").style.display="block";
+            document.getElementById("menu-btn").style.display="none";
+            document.getElementById("close-btn").style.display="block";
+        }
+    function closemenu()
+        {
+            document.getElementById("side-menu").style.display="none";
+            document.getElementById("menu-btn").style.display="block";
+            document.getElementById("close-btn").style.display="none";
+        }
+    </script>
+</body>
+</html>

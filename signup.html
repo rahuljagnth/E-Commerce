@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <title>E-Commerce Signup</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/signupcss.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="top-nav-bar">
+    <div class="search-box">
+        <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+        <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+
+    <a href="./index.html"><img src="images/logo.png" class="logo"></a>
+    <input type="text" class="form-control">
+    <span class="input-group-text"><i class="fa fa-search"></i></span>
+    </div>
+        <div class="menu-bar">
+        <ul>
+            <li>Have an account? <a href="./login.html">Login</a></li>
+        </ul>
+        </div>
+    </div>
+    
+	<div class="header">
+		<img src="images/adduser.png" class="logou" width="100px">
+		
+		<form action="login.html">
+			<div class="txtb">
+                <input type="text">
+                <span data-placeholder="Enter your full name"></span>
+            </div>
+            
+            <div class="txtb">
+                <input type="text">
+                <span data-placeholder="Enter your E-mail ID"></span>
+            </div>
+            
+            <div class="txtb">
+                <input type="password">
+                <span data-placeholder="Create a Password"></span>
+            </div>
+            
+            <div class="txtb">
+                <input type="password">
+                <span data-placeholder="Repeat Password"></span>
+            </div>
+            
+			<br>
+				<input type="Submit" class="logbtn" value="Sign up">
+            <br>
+		</form>
+	</div>
+	
+    <script type="text/javascript">
+    
+        $(".txtb input").on("focus",function(){
+            $(this).addClass("focus"); 
+        });
+        
+        $(".txtb input").on("blur",function(){
+            if($(this).val()=="")
+            $(this).removeClass("focus"); 
+        });
+        
+    </script>
+ 	<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></p><p>&nbsp;</p></p><p>&nbsp;</p></p><p>&nbsp;</p></p><p>&nbsp;</p>
+    
+    <section class="footer">
+        <div class="foot tex-center">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>Useful Links</h1>
+                    <p>Privacy policy</p>
+                    <p>Discount coupons</p>
+                    <p>Return policy</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Get to know Us</h1>
+                    <a href="https://kohli.company/KOHLI/company"><p>About Us</p></a>
+                    <a href="https://kohli.company/KOHLI/"><p>Contact Us</p></a>
+                    <a href="#"><p>Affiliate </p></a>
+                </div>
+                <div class="col-md-3">
+                    <h1>Connect via</h1>
+                    <a href="https://www.facebook.com/KohliCompany"><p>Facebook</p></a>
+                    <a href="https://www.instagram.com/KohliCompany"><p>Intagram</p></a>
+                    <a href="https://www.twitter.com/KohliCompany"><p>Twitter</p></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script>
+    function openmenu()
+        {
+            document.getElementById("side-menu").style.display="block";
+            document.getElementById("menu-btn").style.display="none";
+            document.getElementById("close-btn").style.display="block";
+        }
+    function closemenu()
+        {
+            document.getElementById("side-menu").style.display="none";
+            document.getElementById("menu-btn").style.display="block";
+            document.getElementById("close-btn").style.display="none";
+        }
+    </script>
+</body>
+</html>
